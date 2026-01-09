@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 export default function PricingSection() {
     return (
         <div id="pricing" className="px-4 md:px-16 lg:px-24 xl:px-32">
-            <SectionTitle text1="Pricing" text2="Our Pricing Plans" text3="Flexible pricing options designed to meet your needs — whether you're just getting started or scaling up." />
+            <SectionTitle text1="Pricing" text2="Simple Pricing" text3="Choose a plan that fits your creation schedule. Cancel anytime." />
 
             <div className="flex flex-wrap items-center justify-center gap-8 mt-20">
                 {pricingData.map((plan: IPricing, index: number) => (
@@ -22,7 +22,7 @@ export default function PricingSection() {
                             <p className="absolute px-3 text-sm -top-3.5 left-3.5 py-1 bg-pink-400 rounded-full">Most Popular</p>
                         )}
                         <p className="font-semibold">{plan.name}</p>
-                        <h1 className="text-3xl font-semibold">${plan.price}<span className="text-gray-500 font-normal text-sm">/{plan.period}</span></h1>
+                        <h1 className="text-3xl font-semibold">₹{plan.price}<span className="text-gray-500 font-normal text-sm">/{plan.period}</span></h1>
                         <ul className="list-none text-slate-300 mt-6 space-y-2">
                             {plan.features.map((feature, index) => (
                                 <li key={index} className="flex items-center gap-2">
