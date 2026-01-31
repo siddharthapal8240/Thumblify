@@ -29,7 +29,7 @@ export default function Navbar() {
             Generate
           </Link>
           
-          <Link to="/my-generation" className="hover:text-pink-300 transition">
+          <Link to="/mygeneration" className="hover:text-pink-300 transition">
             My Generations
           </Link>
           <Link to="#" className="hover:text-pink-300 transition">
